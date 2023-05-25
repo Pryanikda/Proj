@@ -14,8 +14,11 @@ import java.util.Random;
 
 
         public Minus() {
-            num1 = r.nextInt(50) + 25;
-            num2 = r.nextInt(25) + 1;
+            num1 = r.nextInt(50) + 1;
+            num2 = r.nextInt(50) + 1;
+            if (num1 < num2) {
+                num1 += num2;
+            }
             answer1 = num1 - num2;
         }
     }
